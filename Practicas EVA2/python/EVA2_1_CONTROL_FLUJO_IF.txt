@@ -1,0 +1,6 @@
+print("¿Qué calificación obtuviste?")
+califa = float(input())
+if califa >= 70:
+    print("Tu calificación es: " + califa + " y pasaste")
+else:
+    print("Tu calificación es 0, No pasaste")

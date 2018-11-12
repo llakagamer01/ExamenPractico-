@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ise16"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 12:21:13 a. m."/>
+        <attribute name="created" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MTk6MDUgYS4gbS47MjkyNA=="/>
+        <attribute name="edited" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MjE6MTMgYS4gbS47MTszMDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cual es tu Edad?&quot;" newline="True"/>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <input variable="edad"/>
+            <output expression="&quot;&#191;Cuentas con INE?&quot;" newline="True"/>
+            <declare name="ine" type="Integer" array="False" size=""/>
+            <input variable="ine"/>
+            <if expression="(edad &gt;= 18 &amp;&amp; ine == true)">
+                <then>
+                    <output expression="&quot;Puedes Entrar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No Puedes Entrar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

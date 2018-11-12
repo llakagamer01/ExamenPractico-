@@ -1,0 +1,23 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("¿Cual es tu Edad?");
+        int edad;
+        
+        edad = input.nextInt();
+        System.out.println("¿Cuentas con INE?");
+        int ine;
+        
+        ine = input.nextInt();
+        if (edad >= 18 && ine == true) {
+            System.out.println("Puedes Entrar");
+        } else {
+            System.out.println("No Puedes Entrar");
+        }
+    }
+}

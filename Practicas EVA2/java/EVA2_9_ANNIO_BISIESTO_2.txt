@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("Ingrese un año");
+        int annio;
+        
+        annio = input.nextInt();
+        if (annio % 4 == 0 && (annio % 100 != 0 && annio % 400 == 0)) {
+            System.out.println("Año Bisiesto");
+        } else {
+            System.out.println("Año no Bisiesto");
+        }
+    }
+}

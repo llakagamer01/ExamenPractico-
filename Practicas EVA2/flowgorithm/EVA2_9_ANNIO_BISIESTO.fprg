@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ise16"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 12:08:43 p. m."/>
+        <attribute name="created" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MDM6MTggcC4gbS47MjkzNg=="/>
+        <attribute name="edited" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MDg6NDMgcC4gbS47MTszMDQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Ingresa un a&#241;o&quot;" newline="True"/>
+            <declare name="annio" type="Integer" array="False" size=""/>
+            <input variable="annio"/>
+            <if expression="(annio % 400 == 0 &amp;&amp; annio % 100 == 0)">
+                <then>
+                    <output expression="&quot;El a&#241;o es bisiesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(annio % 4 == 0 &amp;&amp; annio % 100 != 0)">
+                        <then>
+                            <output expression="&quot;El a&#241;o es bisiesto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El a&#241;o no es bisiesto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("Ingresa tu edad");
+        int edad;
+        
+        edad = input.nextInt();
+        if (edad >= 18) {
+            System.out.println("Eres mayor de edad, puedes pasar");
+        } else {
+            System.out.println("No es mayor de edad, no puedes pasar");
+        }
+    }
+}

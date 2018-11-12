@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ise16"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 12:13:13 a. m."/>
+        <attribute name="created" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MTE6MTAgYS4gbS47MjkxMg=="/>
+        <attribute name="edited" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MTI6MTM6MTMgYS4gbS47MTszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&#191;Cuentas con INE?&quot;" newline="True"/>
+            <declare name="ine" type="Boolean" array="False" size=""/>
+            <input variable="ine"/>
+            <if expression="ine == true">
+                <then>
+                    <output expression="&quot;Si Tienes INE, puede pasar&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;No Tienes INE, no puede pasar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ise16"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-11 05:25:10 p. m."/>
+        <attribute name="created" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MDU6MTM6MjQgcC4gbS47MjkzNg=="/>
+        <attribute name="edited" value="aXNlMTY7REVTS1RPUC01NU5PRlYwOzIwMTgtMTEtMTE7MDU6MjU6MTAgcC4gbS47MTszMDQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Has terminado tus residencias?&quot;" newline="True"/>
+            <declare name="residencias" type="Boolean" array="False" size=""/>
+            <input variable="residencias"/>
+            <output expression="&quot;Has terminado tu servicio?&quot;" newline="True"/>
+            <declare name="servicio" type="Boolean" array="False" size=""/>
+            <input variable="servicio"/>
+            <output expression="&quot;Has terminado tus materias?&quot;" newline="True"/>
+            <declare name="materias" type="Boolean" array="False" size=""/>
+            <input variable="materias"/>
+            <if expression="(residencias &amp;&amp; servicio &amp;&amp; materias)">
+                <then>
+                    <output expression="&quot;Puedes Titularte&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(residencias &amp;&amp; servicio)">
+                        <then>
+                            <output expression="&quot;Tienes materias pendientes&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(residencias &amp;&amp; materias)">
+                                <then>
+                                    <output expression="&quot;No has acabado tu servicio&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="(servicio &amp;&amp; materias)">
+                                        <then>
+                                            <output expression="&quot;No has acabado tus residencias&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;No puedes titularte&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

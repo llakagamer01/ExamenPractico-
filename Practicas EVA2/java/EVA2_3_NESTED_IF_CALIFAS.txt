@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    Scanner input = new Scanner(System.in);
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("¿Cual es tu Calificacion?");
+        int calif;
+        
+        calif = input.nextInt();
+        if (calif == 100) {
+            System.out.println("A");
+        } else {
+            if (calif == 80) {
+                System.out.println("C");
+            } else {
+                if (calif == 70) {
+                    System.out.println("D");
+                } else {
+                    System.out.println("F");
+                }
+            }
+        }
+    }
+}

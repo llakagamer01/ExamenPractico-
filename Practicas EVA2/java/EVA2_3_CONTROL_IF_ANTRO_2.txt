@@ -1,0 +1,19 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("¿Cuentas con INE?");
+        boolean ine;
+        
+        ine = input.nextBoolean();
+        if (ine == true) {
+            System.out.println("Si Tienes INE, puede pasar");
+        } else {
+            System.out.println("No Tienes INE, no puede pasar");
+        }
+    }
+}

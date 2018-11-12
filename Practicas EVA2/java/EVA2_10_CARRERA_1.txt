@@ -1,0 +1,39 @@
+import java.util.*;
+import java.lang.Math;
+
+public class JavaApplication {
+    
+
+    public static void main(String[] args) {
+	Scanner input = new Scanner(System.in);
+        System.out.println("Has terminado tus residencias?");
+        boolean residencias;
+        
+        residencias = input.nextBoolean();
+        System.out.println("Has terminado tu servicio?");
+        boolean servicio;
+        
+        servicio = input.nextBoolean();
+        System.out.println("Has terminado tus materias?");
+        boolean materias;
+        
+        materias = input.nextBoolean();
+        if (residencias && servicio && materias) {
+            System.out.println("Puedes Titularte");
+        } else {
+            if (residencias && servicio) {
+                System.out.println("Tienes materias pendientes");
+            } else {
+                if (residencias && materias) {
+                    System.out.println("No has acabado tu servicio");
+                } else {
+                    if (servicio && materias) {
+                        System.out.println("No has acabado tus residencias");
+                    } else {
+                        System.out.println("No puedes titularte");
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+print("Has terminado tus residencias?")
+residencias = (input().lower == 'true')
+print("Has terminado tu servicio?")
+servicio = (input().lower == 'true')
+print("Has terminado tus materias?")
+materias = (input().lower == 'true')
+if residencias and servicio and materias:
+    print("Puedes Titularte")
+else:
+    if residencias and servicio:
+        print("Tienes materias pendientes")
+    else:
+        if residencias and materias:
+            print("No has acabado tu servicio")
+        else:
+            if servicio and materias:
+                print("No has acabado tus residencias")
+            else:
+                print("No puedes titularte")

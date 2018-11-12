@@ -1,0 +1,12 @@
+print("¿Cual es tu Calificacion?")
+calif = int(input())
+if calif == 100:
+    print("A")
+else:
+    if calif == 80:
+        print("C")
+    else:
+        if calif == 70:
+            print("D")
+        else:
+            print("F")
