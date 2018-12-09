@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="invitado"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-23 09:37:28 a. m."/>
+        <attribute name="created" value="aW52aXRhZG87TEFCQTEzMTAwMTsyMDE4LTExLTIzOzA5OjE1OjM1IGEuIG0uOzI4ODY="/>
+        <attribute name="edited" value="aW52aXRhZG87TEFCQTEzMTAwMTsyMDE4LTExLTIzOzA5OjM3OjI4IGEuIG0uOzQ7MzAwMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="iVal" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introduce que calcular&quot;" newline="True"/>
+            <input variable="iVal"/>
+            <declare name="iResu" type="Integer" array="False" size=""/>
+            <assign variable="iResu" expression="calculaFactorial(iVal)"/>
+            <output expression="iResu" newline="True"/>
+        </body>
+    </function>
+    <function name="calculaFactorial" type="Integer" variable="iFact">
+        <parameters>
+            <parameter name="valor" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="iFact" type="Integer" array="False" size=""/>
+            <assign variable="iFact" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="valor" end="1" direction="dec" step="1">
+                <assign variable="iFact" expression="iFact * i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
